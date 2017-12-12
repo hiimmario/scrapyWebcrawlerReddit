@@ -27,9 +27,31 @@ def getAll(r, submissionId, verbose=True):
         getSubComments(comment, commentsList, verbose=verbose)
     return commentsList
 
+submission_id = '7j3svq'
+res = getAll(reddit, "submission_id")
 
-res = getAll(reddit, "7ieurh")
+print(len(res))
 
-print(res)
+
+##########################
+
+
+
+
+
+for item in res:
+    if hasattr(item, "body"):
+        print(item.body)
+        # TODO
+        '''          
+        alle eigenschaften die ausgelesen werden soll von hand auslesen
+        -> debuggen und abschreiben lol
+        dict to json geht nicht da json ein string und dict eine datenstruktur vo der key und das value ein string ist
+        '''
+
+
+
 
 # https://www.reddit.com/r/leagueoflegends/
+
+
