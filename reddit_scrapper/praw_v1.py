@@ -10,11 +10,13 @@ reddit = praw.Reddit(client_id='7R8IfIFqK8easw',
 
 def getSubComments(comment, allComments, verbose=True):
     allComments.append(comment)
+
     if not hasattr(comment, "replies"):
         replies = comment.comments()
         if verbose: print("fetching (" + str(len(allComments)) + " comments fetched total)")
     else:
         replies = comment.replies
+
     for child in replies:
         getSubComments(child, allComments, verbose=verbose)
 
@@ -23,15 +25,16 @@ def getAll(r, submissionId, verbose=True):
     submission = r.submission(submissionId)
     comments = submission.comments
     commentsList = []
+
     for comment in comments:
         getSubComments(comment, commentsList, verbose=verbose)
+
+    if verbose: print("done (" + str(len(commentsList)) + " comments fetched total)")
+
     return commentsList
 
-submission_id = '7j3svq'
-res = getAll(reddit, "submission_id")
-
-print(len(res))
-
+submission_id = '7jc2fv'
+res = getAll(reddit, submission_id)
 
 ##########################
 
@@ -54,4 +57,5 @@ for item in res:
 
 # https://www.reddit.com/r/leagueoflegends/
 
-
+# TODO
+# how to get all submission ids from a specific subreddit
