@@ -1,4 +1,5 @@
 import praw
+import csv
 
 reddit = praw.Reddit(client_id='7R8IfIFqK8easw',
                      client_secret='o8I-SdKabsWYlKt2KWFYQsG1hPc',
@@ -33,29 +34,21 @@ def getAll(r, submissionId, verbose=True):
 
     return commentsList
 
-submission_id = '7jc2fv'
-res = getAll(reddit, submission_id)
-
 ##########################
 
+file = open("C:/Users/Mario/PycharmProjects/chatbot/reddit_crawler/reddit_crawler_scrapy/reddit.csv", "rt")
+reader = csv.reader(file)
 
+data_set = []
+rownum = 0
 
+for row in reader:
+    if rownum != 0 or (len(row) != 0):
+        submission_id = row[1]
+        if submission_id[0:2] == 't3':
+            rsid = submission_id[3::]
+            data_set.append((row[0], getAll(reddit, rsid, verbose=False)))
 
+file.close()
 
-for item in res:
-    if hasattr(item, "body"):
-        print(item.body)
-        # TODO
-        '''          
-        alle eigenschaften die ausgelesen werden soll von hand auslesen
-        -> debuggen und abschreiben lol
-        dict to json geht nicht da json ein string und dict eine datenstruktur vo der key und das value ein string ist
-        '''
-
-
-
-
-# https://www.reddit.com/r/leagueoflegends/
-
-# TODO
-# how to get all submission ids from a specific subreddit
+data_set = data_set
