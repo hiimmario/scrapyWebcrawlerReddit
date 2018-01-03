@@ -45,6 +45,7 @@ rownum = 0
 for row in reader:
     if rownum != 0 or (len(row) != 0):
         submission_id = row[1]
+        rownum += 1
         if submission_id[0:2] == 't3':
             rsid = submission_id[3::]
             data_set.append((row[0], getAll(reddit, rsid, verbose=False)))
@@ -52,3 +53,13 @@ for row in reader:
 file.close()
 
 data_set = data_set
+
+##############################
+
+result = getAll(reddit, "7l47og", verbose=True)
+
+print(len(result))
+
+###############################
+
+result = reddit.search('league of legends')

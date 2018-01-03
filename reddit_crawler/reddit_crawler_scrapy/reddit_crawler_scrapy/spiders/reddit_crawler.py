@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
-# scrapy crawl reddit -a subreddit=leagueoflegends -a pages=3 -s LOG_FILE=filename
+# scrapy crawl reddit -a subreddit=leagueoflegends -a pages=10
 
 class RedditSpider(scrapy.Spider):
     name = 'reddit'

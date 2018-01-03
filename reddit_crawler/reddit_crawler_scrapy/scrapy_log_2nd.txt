@@ -1,0 +1,179 @@
+2017-12-21 15:19:08 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: reddit_crawler_scrapy)
+2017-12-21 15:19:08 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'reddit_crawler_scrapy', 'DOWNLOAD_DELAY': 4, 'FEED_FORMAT': 'csv', 'FEED_URI': 'reddit_2nd.csv', 'LOG_FILE': 'scrapy_log_2nd.txt', 'NEWSPIDER_MODULE': 'reddit_crawler_scrapy.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['reddit_crawler_scrapy.spiders'], 'USER_AGENT': 'reddit_crawler_scrapy university project reddit user hiimmario_'}
+2017-12-21 15:19:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2017-12-21 15:19:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-12-21 15:19:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-12-21 15:19:08 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-12-21 15:19:08 [scrapy.core.engine] INFO: Spider opened
+2017-12-21 15:19:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-12-21 15:19:08 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-12-21 15:19:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/robots.txt> (referer: None)
+2017-12-21 15:19:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/> (referer: None)
+2017-12-21 15:19:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/>
+{'title': 'Acorn returning to LGD as a coach?', 'submission_id': 't3_7l9pep'}
+2017-12-21 15:19:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/>
+{'title': "Why aren't we happy about how we're getting more blue instead of orange essence now?", 'submission_id': 't3_7l9aio'}
+2017-12-21 15:19:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=25&after=t3_7l996j> (referer: https://www.reddit.com/r/leagueoflegends/new/)
+2017-12-21 15:19:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=25&after=t3_7l996j>
+{'title': 'Will there ever comes a system that counters smurfs in ranked?', 'submission_id': 't3_7l98zx'}
+2017-12-21 15:19:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=25&after=t3_7l996j>
+{'title': 'Phreak: Has Magic Damage Gone Up in 2018?', 'submission_id': 't3_7l94vt'}
+2017-12-21 15:19:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=25&after=t3_7l996j>
+{'title': 'Alright noob jungler question.', 'submission_id': 't3_7l910f'}
+2017-12-21 15:19:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=50&after=t3_7l8tlt> (referer: https://www.reddit.com/r/leagueoflegends/new/?count=25&after=t3_7l996j)
+2017-12-21 15:19:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=50&after=t3_7l8tlt>
+{'title': 'How its feeling to get boosted ?', 'submission_id': 't3_7l8r1j'}
+2017-12-21 15:19:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=50&after=t3_7l8tlt>
+{'title': 'Still Need Help With Game Not showing', 'submission_id': 't3_7l8pfa'}
+2017-12-21 15:19:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=50&after=t3_7l8tlt>
+{'title': 'Poison Tank concept?', 'submission_id': 't3_7l8pb8'}
+2017-12-21 15:19:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=50&after=t3_7l8tlt>
+{'title': "Why don't Riot just let us create custom URF game so we can play any champion we want?", 'submission_id': 't3_7l8nqc'}
+2017-12-21 15:19:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=50&after=t3_7l8tlt>
+{'title': 'I have just played two game where the runes I have picked in champion select are different to my in game selection.', 'submission_id': 't3_7l8lex'}
+2017-12-21 15:19:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=50&after=t3_7l8tlt>
+{'title': 'I just had the worst nightmare about Mordekaiser', 'submission_id': 't3_7l8kpv'}
+2017-12-21 15:19:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=50&after=t3_7l8tlt>
+{'title': 'Riot "Games" actually making a second game?', 'submission_id': 't3_7l8hh0'}
+2017-12-21 15:19:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=75&after=t3_7l8hh0> (referer: https://www.reddit.com/r/leagueoflegends/new/?count=50&after=t3_7l8tlt)
+2017-12-21 15:19:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=75&after=t3_7l8hh0>
+{'title': 'Honor eSports - Seeking an Analyst! (x-post from r/esports)', 'submission_id': 't3_7l8e56'}
+2017-12-21 15:19:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=75&after=t3_7l8hh0>
+{'title': 'Most INSANE Warwick Ult Dodge!', 'submission_id': 't3_7l8ca1'}
+2017-12-21 15:19:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=75&after=t3_7l8hh0>
+{'title': 'Disenchanting a Legendary skin is worth a bit more than a ward skin', 'submission_id': 't3_7l88np'}
+2017-12-21 15:19:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=75&after=t3_7l8hh0>
+{'title': 'Currently having a pretty big bug issue with runes while champ select', 'submission_id': 't3_7l889y'}
+2017-12-21 15:19:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=75&after=t3_7l8hh0>
+{'title': '[Team Interview] FlyQuest WildTurtle : "When we started scrimming, I saw our potential."', 'submission_id': 't3_7l86ob'}
+2017-12-21 15:19:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=100&after=t3_7l814t> (referer: https://www.reddit.com/r/leagueoflegends/new/?count=75&after=t3_7l8hh0)
+2017-12-21 15:19:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=100&after=t3_7l814t>
+{'title': 'Honor ideas', 'submission_id': 't3_7l7zz4'}
+2017-12-21 15:19:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=100&after=t3_7l814t>
+{'title': 'muscular ninja dominates various things while I play fitting music', 'submission_id': 't3_7l7zux'}
+2017-12-21 15:19:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=100&after=t3_7l814t>
+{'title': '[NA] Last chance to sign-up for skin gift exchange!', 'submission_id': 't3_7l7u8w'}
+2017-12-21 15:19:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=100&after=t3_7l814t>
+{'title': 'My fist zoe penta kill with only mastery 2.', 'submission_id': 't3_7l7r0u'}
+2017-12-21 15:19:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=100&after=t3_7l814t>
+{'title': 'This incredible handmade Poro plushie was made by my Reddit secret santa!', 'submission_id': 't3_7l7oel'}
+2017-12-21 15:19:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=125&after=t3_7l7oel> (referer: https://www.reddit.com/r/leagueoflegends/new/?count=100&after=t3_7l814t)
+2017-12-21 15:19:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=125&after=t3_7l7oel>
+{'title': 'Honestly, the previous rune/mastery system was better.', 'submission_id': 't3_7l7lqe'}
+2017-12-21 15:19:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=125&after=t3_7l7oel>
+{'title': "I Thought Being Autofill-Protected Meant that You Won't get Autofilled even if there was a Dodge..", 'submission_id': 't3_7l7jc3'}
+2017-12-21 15:19:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=125&after=t3_7l7oel>
+{'title': 'URF Tank Maokai sure is fun lol', 'submission_id': 't3_7l7g7k'}
+2017-12-21 15:19:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=125&after=t3_7l7oel>
+{'title': 'star guardian ahri and miss fortune fanart', 'submission_id': 't3_7l7dcr'}
+2017-12-21 15:19:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=125&after=t3_7l7oel>
+{'title': "Who think's zoe is over powered?", 'submission_id': 't3_7l73yi'}
+2017-12-21 15:19:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=150&after=t3_7l70mc> (referer: https://www.reddit.com/r/leagueoflegends/new/?count=125&after=t3_7l7oel)
+2017-12-21 15:19:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=150&after=t3_7l70mc>
+{'title': 'nutty baron steal by ezreal (Afflictive)', 'submission_id': 't3_7l6s3z'}
+2017-12-21 15:19:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=150&after=t3_7l70mc>
+{'title': 'What champion do you just despise!? [Looking for something funny]', 'submission_id': 't3_7l6q54'}
+2017-12-21 15:19:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=150&after=t3_7l70mc>
+{'title': 'Snowball mishap in ARURF', 'submission_id': 't3_7l6p56'}
+2017-12-21 15:19:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=150&after=t3_7l70mc>
+{'title': 'LoL Triple flash Save', 'submission_id': 't3_7l6omk'}
+2017-12-21 15:19:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=150&after=t3_7l70mc>
+{'title': 'Why the hell can Tristana ult minions', 'submission_id': 't3_7l6ngv'}
+2017-12-21 15:19:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=150&after=t3_7l70mc>
+{'title': 'Who is REANiMATE?', 'submission_id': 't3_7l6nfl'}
+2017-12-21 15:19:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf> (referer: https://www.reddit.com/r/leagueoflegends/new/?count=150&after=t3_7l70mc)
+2017-12-21 15:19:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf>
+{'title': 'Rito spaghetti code?', 'submission_id': 't3_7l6d0g'}
+2017-12-21 15:19:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf>
+{'title': 'Any bonuses if you buy a 1820 RP skin', 'submission_id': 't3_7l6a1e'}
+2017-12-21 15:19:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf>
+{'title': 'Want to become better? guaranteed method right here', 'submission_id': 't3_7l699f'}
+2017-12-21 15:19:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf>
+{'title': 'Need some graphical advice/help', 'submission_id': 't3_7l68zp'}
+2017-12-21 15:19:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf>
+{'title': 'Dyrus gets jebaited', 'submission_id': 't3_7l67sy'}
+2017-12-21 15:19:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf>
+{'title': 'Reminder: you are allowed to ban hovers, there is no rule against banning particularly disgusting picks. Nobody in season 3 fed because you "banned their kassadin" it\'s just an excuse to be toxic.', 'submission_id': 't3_7l62f4'}
+2017-12-21 15:19:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf>
+{'title': 'AP Rammus URF is disgusting', 'submission_id': 't3_7l62a2'}
+2017-12-21 15:19:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf>
+{'title': 'Discord bot idea', 'submission_id': 't3_7l621w'}
+2017-12-21 15:19:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w> (referer: https://www.reddit.com/r/leagueoflegends/new/?count=175&after=t3_7l6juf)
+2017-12-21 15:19:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w>
+{'title': 'LF support for level up smurf (im adc) [euw]', 'submission_id': 't3_7l5zo4'}
+2017-12-21 15:19:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w>
+{'title': 'Why is Gangplank listed under support in the shop?', 'submission_id': 't3_7l5z0q'}
+2017-12-21 15:19:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w>
+{'title': 'Need Ideas for Funny league videos', 'submission_id': 't3_7l5yvh'}
+2017-12-21 15:19:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w>
+{'title': 'Ls showing us the way!', 'submission_id': 't3_7l5w8l'}
+2017-12-21 15:19:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w>
+{'title': 'What does the community think about a preview snapshot of skins in the shop?', 'submission_id': 't3_7l5usx'}
+2017-12-21 15:19:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w>
+{'title': 'level 4 in 3 mins', 'submission_id': 't3_7l5tbm'}
+2017-12-21 15:19:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w>
+{'title': 'We really need 1 forgivness dodge in promos', 'submission_id': 't3_7l5p5o'}
+2017-12-21 15:19:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w>
+{'title': 'URF Madness', 'submission_id': 't3_7l5o1u'}
+2017-12-21 15:19:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=225&after=t3_7l5n8l> (referer: https://www.reddit.com/r/leagueoflegends/new/?count=200&after=t3_7l621w)
+2017-12-21 15:19:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=225&after=t3_7l5n8l>
+{'title': 'is this a bug? Jayve and Lee sin interaction', 'submission_id': 't3_7l5mrf'}
+2017-12-21 15:19:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=225&after=t3_7l5n8l>
+{'title': 'Why does this sub hate ARURF so much?', 'submission_id': 't3_7l5h2d'}
+2017-12-21 15:19:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=225&after=t3_7l5n8l>
+{'title': 'My Very First Draven Montage. :) Thoughts?', 'submission_id': 't3_7l59lb'}
+2017-12-21 15:19:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.reddit.com/r/leagueoflegends/new/?count=250&after=t3_7l580u> (referer: https://www.reddit.com/r/leagueoflegends/new/?count=225&after=t3_7l5n8l)
+2017-12-21 15:19:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=250&after=t3_7l580u>
+{'title': 'Are any other top lane mains really just not enjoying the game rn?', 'submission_id': 't3_7l51q9'}
+2017-12-21 15:19:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=250&after=t3_7l580u>
+{'title': 'Do sckin shards still exist?', 'submission_id': 't3_7l4zp1'}
+2017-12-21 15:19:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=250&after=t3_7l580u>
+{'title': 'Kassadin ARURF Outplay', 'submission_id': 't3_7l4w5n'}
+2017-12-21 15:19:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=250&after=t3_7l580u>
+{'title': 'Are they really gonna nerf teemo?', 'submission_id': 't3_7l4ueg'}
+2017-12-21 15:19:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.reddit.com/r/leagueoflegends/new/?count=250&after=t3_7l580u>
+{'title': 'How many games have you played this season, including the preseason so far ?', 'submission_id': 't3_7l4tti'}
+2017-12-21 15:19:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-12-21 15:19:59 [scrapy.extensions.feedexport] INFO: Stored csv feed (57 items) in: reddit_2nd.csv
+2017-12-21 15:19:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9323,
+ 'downloader/request_count': 12,
+ 'downloader/request_method_count/GET': 12,
+ 'downloader/response_bytes': 279051,
+ 'downloader/response_count': 12,
+ 'downloader/response_status_count/200': 12,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 12, 21, 14, 19, 59, 182437),
+ 'item_scraped_count': 57,
+ 'log_count/DEBUG': 70,
+ 'log_count/INFO': 8,
+ 'request_depth_max': 10,
+ 'response_received_count': 12,
+ 'scheduler/dequeued': 11,
+ 'scheduler/dequeued/memory': 11,
+ 'scheduler/enqueued': 11,
+ 'scheduler/enqueued/memory': 11,
+ 'start_time': datetime.datetime(2017, 12, 21, 14, 19, 8, 953838)}
+2017-12-21 15:19:59 [scrapy.core.engine] INFO: Spider closed (finished)

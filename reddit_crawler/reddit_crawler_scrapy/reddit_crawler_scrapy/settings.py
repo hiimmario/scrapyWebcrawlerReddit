@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'reddit_crawler_scrapy.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'reddit_crawler_scrapy university project m.reichart@hotmail.com'
+USER_AGENT = 'reddit_crawler_scrapy university project reddit user hiimmario_'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -91,9 +91,9 @@ DOWNLOAD_DELAY = 5
 
 #Export as CSV Feed
 FEED_FORMAT = "csv"
-FEED_URI = "reddit.csv"
+FEED_URI = "reddit_5th.csv"
 
 
 # RANDOMIZE_DOWNLOAD_DELAY = False
 
-LOG_FILE='scrapy_log.txt'
+LOG_FILE='scrapy_log_5th.txt'

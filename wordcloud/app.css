@@ -1,0 +1,13 @@
+#content {
+	text-align: center;
+	padding-top: 25%
+}
+
+
+body {
+	background: url(snoo_head_test.png);
+	background-size: cover;
+	background-position: center top 10px;
+}
+
+
